@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: src
+    database: JAFFLE_SHOP
+    description: This is source DB
+    schema: JSHOP
+    tables:
+      - name: customers
+      - name: orders
+     
+             
+        

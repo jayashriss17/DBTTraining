@@ -4,6 +4,7 @@ models:
   - name: stg_nations
     columns:
       - name: nationid
+        description: '{{ doc("prkey")}}'
         data_tests:
           - unique
           - not_null
@@ -14,6 +15,7 @@ models:
             config:
                 store_failures: true
       - name: regionid
+        description: '{{ doc("prkey")}}'
         data_tests:
           - relationships:
               to: ref('stg_regions')
